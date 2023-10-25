@@ -3,6 +3,7 @@ import Header from '@components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import Banner from '@components/Banner'
+import Footer from '@components/Footer'
 
 
 
@@ -24,7 +25,8 @@ export default async function RootLayout({children}: {children: React.ReactNode}
         <Header />
         <Banner />
         {children}
-      </body>
+        <Footer />
+        </body>
     </html>
   )
 }
